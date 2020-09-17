@@ -136,7 +136,7 @@ $(document).ready(function() {
       if ( hour < nowHour24) {
         // $hourRow.css('')
         if (test) { console.log("lessThan"); }
-        $hourRow.css("background-color","grey")
+        $hourRow.css("background-color","lightgrey")
       } else if ( hour > nowHour24) {
         if (test) { console.log("greaterthan"); }
         $hourRow.css("background-color","lightgreen")
@@ -180,7 +180,5 @@ $(document).ready(function() {
   
       let i = $(this).attr('hour-index');
   
-      // add shawdow pulse class
-      $(`#saveid-${i}`).addClass('shadowPulse');
     });
   });
